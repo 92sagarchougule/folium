@@ -1,0 +1,20 @@
+#Developer Name : Sagar Chougule
+#Folium Sample Marker Codes
+
+#import folium
+import folium
+#Select map
+
+t = folium.Map(location=[15.374,75.602],tiles = 'Stamen Terrain',zoom_start=10)
+
+#tool tip for popup
+tooltip = 'click me!'
+
+#marker 1
+folium.Marker([15.375,75.606],popup="<b>School Building</b>", tooltip=tooltip).add_to(t)
+
+#marker 2
+folium.Marker([15.371,75.607],popup="<b>Training Building</b>", tooltip=tooltip).add_to(t)
+
+#Display map
+print(t)
